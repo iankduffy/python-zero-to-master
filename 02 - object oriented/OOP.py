@@ -8,6 +8,14 @@ class PlayerCharacter:
 
 	def run(self):
 			print('run')
+	
+	@classmethod # can be called with out a player created
+	def add_things(cls, num1, num2): 
+		return num1 + num2
+
+	@staticmethod
+	def add_thing2(num1, num2):
+		return num1 + num2
 
 
 player1 = PlayerCharacter('Bob', 60)
